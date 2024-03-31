@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Using JavaScript</title>
+
+    <!-- Font Family -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS   -->
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input id="display" type="text" placeholder="0" />
+      <div>
+        <button class="operator" onclick="cleardisplay()">AC</button>
+        <button class="operator" onclick="deleteValue()">DEL</button>
+        <button class="operator" onclick="calculatePercentage()">%</button>
+        <button class="operator" onclick="handeleGetValue('/')">/</button>
+      </div>
+
+      <div>
+        <button onclick="handeleGetValue('7')">7</button>
+        <button onclick="handeleGetValue('8')">8</button>
+        <button onclick="handeleGetValue('9')">9</button>
+        <button class="operator" onclick="handeleGetValue('*')">*</button>
+      </div>
+
+      <div>
+        <button onclick="handeleGetValue('4')">4</button>
+        <button onclick="handeleGetValue('5')">5</button>
+        <button onclick="handeleGetValue('6')">6</button>
+        <button class="operator" onclick="handeleGetValue('-')">-</button>
+      </div>
+
+      <div>
+        <button onclick="handeleGetValue('1')">1</button>
+        <button onclick="handeleGetValue('2')">2</button>
+        <button onclick="handeleGetValue('3')">3</button>
+        <button class="operator" onclick="handeleGetValue('+')">+</button>
+      </div>
+
+      <div>
+        <button onclick="handeleGetValue('00')">00</button>
+        <button onclick="handeleGetValue('0')">0</button>
+        <button onclick="handeleGetValue('.')">.</button>
+        <button class="equal-btn" onclick="handelcalculate()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="./Script/Script.js"></script>
+</html>
